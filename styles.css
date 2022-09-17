@@ -193,3 +193,50 @@ button {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* style for blog page */
+
+.box-container h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin: 50px;
+  font-family: "Zilla Slab", serif;
+}
+
+.questions {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 50px 0;
+}
+
+.questions h3 {
+  --tw-bg-opacity: 1;
+  font-size: 25px;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+
+  background-image: linear-gradient(90deg,
+      rgb(248, 175, 91) 0%,
+      rgb(255, 60, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.questions h3:hover {
+  background-position: 100%;
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

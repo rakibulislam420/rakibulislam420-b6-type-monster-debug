@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="box-container">
+        <div class="blog__text_heading">
+            <h1>Here are some javascript related quistion</h1>
+        </div>
+        <div class="questions">
+            <div class="storage">
+                <h3>
+                    <strong>Q:</strong> What is the difference between local storage and
+                    session storage?
+                </h3>
+                <p>
+                    <strong>Ans:</strong> localStorage- localStorage is a property that
+                    allows JavaScript sites and apps to save key-value pairs in a web
+                    browser with no expiration date. This means the data stored in the
+                    browser will persist even after the browser window is closed. <br />
+                    <br />
+                    SessionStorage- SessionStorage stores object data only for a
+                    session. It means that the data stored in the sessionStorage will be
+                    deleted when the browser is closed.
+                </p>
+            </div>
+            <div class="scope">
+                <h3>
+                    <strong>Q:</strong> What is the difference between Global scope and
+                    block scope?
+                </h3>
+                <p>
+                    <strong>Ans:</strong>Global scope- Global scope is the context where
+                    everything in a Javascript program executes by default. This scope
+                    includes all variables, objects, and references that are not
+                    contained within a customized scope defined by a programmer.
+                    <br />
+                    <br />
+                    Block scope is an area within if, switch conditions, or for and
+                    while loops. Generally speaking, whenever you see {curly brackets},
+                    it is a block. In ES6, const and let keywords allow developers to
+                    declare variables in the block scope, which means those variables
+                    exist only within the corresponding block.
+                </p>
+            </div>
+            <div class="event__loop">
+                <h3><strong>Q:</strong>How does the event loop work?</h3>
+                <p>
+                    <strong>Ans:</strong>The Event Loop has one simple job — to monitor
+                    the Call Stack and the Callback Queue. If the Call Stack is empty,
+                    the Event Loop will take the first event from the queue and will
+                    push it to the Call Stack, which effectively runs it. Such an
+                    iteration is called a tick in the Event Loop.
+                </p>
+            </div>
+            <div class="types_of_undifiend">
+                <h3><strong>Q:</strong> How many types of Undefined we can get?</h3>
+                <p>
+                    <strong>Ans:</strong>A variable that has not been assigned a value
+                    is of type undefined . A method or statement also returns undefined
+                    if the variable that is being evaluated does not have an assigned
+                    value. A function returns undefined if a value was not returned.
+                    Also, a functin returns undefined whewn parameter declared but no
+                    auguments passing.
+                </p>
+            </div>
+        </div>
+    </div>
+     
+</body>
+
+</html>

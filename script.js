@@ -70,6 +70,13 @@ const gameOver = () => {
   const finishTime = new Date().getTime();
   const timeTaken = parseInt((finishTime - startTime) / 1000);
 
+  // WPM calculation
+  const displayTextLength = document.getElementById('question').innerText.length;
+  const currentWpm = parseInt(((displayTextLength / 5) / timeTaken) * 60);
+  const accuracy = parseInt(100 - (errorCount / timeTaken) * 100)
+  // console.log(accuracy)
+  // console.log(currentWpm);
+
   // show result modal
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
@@ -82,11 +89,13 @@ const gameOver = () => {
   resultModal.innerHTML += `
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
+    <p>Your Typing Speed is  <span class="bold ">${currentWpm}</span> WPM</p>
+    <p>Your Accuracy is  <span class="bold ">${accuracy}</span> %</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
   `;
 
-  addHistory(questionText, timeTaken, errorCount);
+  addHistory(questionText, timeTaken, errorCount, currentWpm, accuracy);
 
   // restart everything
   startTime = null;
